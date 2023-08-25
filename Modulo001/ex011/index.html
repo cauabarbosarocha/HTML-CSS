@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e díminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/img-m.png" type="image/png">
+        <img src="Imagens/img-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em um site.
+    </p>
+    <audio src="midia/Body of Water - TrackTribe.mp3" controls></audio>
+    <audio preload="metadata" controls>
+        <source src="midia/Gully Dreams - Hanu Dixit.mp3" type="audio/mpeg">
+        <!--
+        <source src="midia/Body of Water - TrackTribe.ogg" type="audio/ogg">
+        <source src="midia/Gully Dreams - Hanu Dixit.wav" type="audio/wav">
+        -->
+        <p>
+            Infelizmente seu navegator não consegue reproduzir áudios. <br>
+            <a href="midia/Body of Water - TrackTribe.mp3">Cligue aqui para baixar o arquivo MP3.</a>
+        </p>
+    </audio>
+    <h1>Reproduzindo vídeos</h1>
+    <h2>Vamos aprender a reproduzir vídeos na hospedagem própria.</h2>
+    <video controls>
+        <source src="videos/pexels-eugenia-remark-17207685 (540p).mp4" type="video/mp4">
+        <!--
+        Outros formatos de vídeo obrigatórios para que o site funcione em qualquer navegador.
+        <source src="videos/pexels-lujain-15766145 (540p).m4v" type="video/mp4">
+        <source src="videos/pexels-eugenia-remark-17207685 (540p).webm" type="video/webm">
+        <source src="videos/pexels-eugenia-remark-17207685 (540p).ogg" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        -->
+    </video>
+    <h2>Agora vamos aprender a reproduzir vídeos externos.</h2>
+    <p>
+        Este vídeo tem a hospedagem pelo YouTube.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>
+        Já este, tem a hospedagem pelo Vimeo.
+    </p>
+    <iframe src="https://player.vimeo.com/video/381624926?h=f5935d10db&color=c9ff23" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html> 

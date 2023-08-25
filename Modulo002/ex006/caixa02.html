@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightcyan;
+        }
+        header {
+            background-color: whitesmoke;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.585);
+            text-align: center;
+            margin: 20px 50px;
+            border-radius: 50px 100px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            color: darkred;
+        }
+        article > h2 {
+            margin: 0px;
+        }
+        article > p {
+            margin: 0px;
+        }
+        #assuntos {
+            background-color: lightblue;
+            box-shadow:5px 5px 10px rgb(0, 0, 0, 0.585);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        #notícias {
+            background-color: aliceblue;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.585);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        } 
+        footer {
+            background-color: darkslategrey;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.585);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href=".">link</a>
+            <a href=".">link</a>
+            <a href=".">link</a>
+            <a href=".">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="assuntos">
+                <h2>Top 10 Animes</h2>
+                <ol>
+                    <li>Dororo</li>
+                    <li>Vinland Saga</li>
+                    <li>Berserk</li>
+                    <li>One Piece</li>
+                </ol>
+            </article>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora cupiditate, atque minima, totam nesciunt, facere ipsum ut recusandae dignissimos voluptas assumenda numquam consequatur maiores autem quas. Aliquid, numquam sint?
+                </p>
+                <aside>
+                    <p>Artigo escrito por Jorge Cloes.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;CauãBarbosa</p>
+    </footer>
+</body>
+</html>
