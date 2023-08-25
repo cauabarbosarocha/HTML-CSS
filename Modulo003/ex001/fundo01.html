@@ -4,7 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Imagem de Fundo</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <style>
+        body {
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+
+        .quadrado {
+            background-color: lightcyan;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+            display: inline-block;
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+        }
+
+        #q1 {
+            background-color: skyblue;
+        }
+
+        #q2 {
+            background-image: linear-gradient(to bottom, cyan, darkblue);
+        }
+
+        #q3 {
+            background-image: url(imagens/pattern003.png);
+        }
+    </style>
 </head>
 <body>
     <div class="quadrado" id="q1">
