@@ -16,6 +16,14 @@
             padding: 10px;
         }
 
+        .cgrou {
+            background-color: lightblue;
+        }
+
+        .cnome {
+            background-color: lightgrey;
+        }
+
         th, td {
             border: 1px solid black;
             padding: 10px;
@@ -24,6 +32,11 @@
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrou" span="2">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -36,6 +49,12 @@
             <td>M</td>
             <td>17</td>
             <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Heloisa</td>
+            <td>F</td>
+            <td>16</td>
+            <td>Recepcionista</td>
         </tr>
         <tr>
             <td>Paula</td>
@@ -57,15 +76,9 @@
         </tr>
         <tr>
             <td>Debora</td>
+            <td>F</td>
             <td>21</td>
-            <td>F</td>
             <td>Compradora</td>
-        </tr>
-        <tr>
-            <td>Heloisa</td>
-            <td>F</td>
-            <td>16</td>
-            <td>Recepcionista</td>
         </tr>
         <tr>
             <td>Daniel</td>
