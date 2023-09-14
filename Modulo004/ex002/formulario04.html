@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="nomi">Nome: </label>
+                <input type="text" name="nome" id="nomi" minlength="3" maxlength="30" required>
+            </p>
+            <p>
+                <label for="imai">E-mail: </label>
+                <input type="email" name="email" id="imai" required>
+            </p>
+            <p>
+                <label for="numi">Telefone: </label>
+                <input type="tel" name="nume" id="numi" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre RegEx
+
+            HTML telefone pattern
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
