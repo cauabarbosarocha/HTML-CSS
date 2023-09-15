@@ -7,8 +7,24 @@
 </head>
 <body>
     <h1>Teste de formlário</h1>
-    <fieldset>
-        <legend></legend>
-    </fieldset>
+    <form action="cadastro.js" method="post">
+        <fieldset>
+            <legend></legend>
+            <p>
+                <label for="cir">Cor: </label>
+                <input type="color" name="cor" id="cir">
+            </p>
+            <p>
+                <label for="nii">Nível de satisfalção: </label>
+                <input type="range" name="niv" id="nii" min="1" max="100" value="1">
+            </p>
+            <p>
+                <label for="irg">Arguivo: </label>
+                <input type="file" name="arg" id="irg">
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
 </body>
 </html>
