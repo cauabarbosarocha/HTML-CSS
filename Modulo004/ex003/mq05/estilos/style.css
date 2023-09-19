@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: #8d8d8d;
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+#burgao {
+    background-color: #2b2b2b;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burgao:hover {
+    background-color: white;
+    color: black;
+}
+
+#fechar {
+    background-color: #2b2b2b;
+    color: white;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#fechar:hover {
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #5c5c5c;
+    color: white;
+    border-top: 1px solid #8d8d8d;
+}
+
+li > a:hover {
+    background-color: #a9a9a9;
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top:10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.345);
+}
+
+article > h2 {
+    padding: 0px 0px 10px 10px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
